@@ -1,6 +1,10 @@
 # 📊 Telco Customer Churn Dashboard
 
-> An end-to-end **Business Intelligence and Data Analytics project** built with **Power BI** to analyze customer churn, identify high-risk customer segments, understand revenue impact, and translate data-driven insights into actionable retention strategies.
+[![Power BI](https://img.shields.io/badge/Power_BI-F2C94C?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![DAX](https://img.shields.io/badge/DAX-Data_Analysis_Expressions-blue?style=for-the-badge)](https://learn.microsoft.com/dax/)
+[![Power Query](https://img.shields.io/badge/Power_Query-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://learn.microsoft.com/power-query/)
+
+> An end-to-end **Business Intelligence and Data Analytics project** built with **Power BI** to analyze customer churn, identify high-risk customer segments, understand revenue impact, and translate data-driven insights into actionable retention strategies across **7,043 telecom subscriber records**.
 
 ---
 
@@ -28,7 +32,16 @@ The dashboard breaks the analysis down by tenure, support tickets, charges, and 
 
 ## 📂 Dataset
 
-The dataset used is the well-known **IBM Telco Customer Churn** sample dataset — anonymized, publicly available data used for churn-analysis training and demos (no real customer PII). It covers:
+The dataset used is the well-known **IBM Telco Customer Churn** sample dataset — anonymized, publicly available data used for churn-analysis training and demos (no real customer PII).
+
+| Attribute | Detail |
+| :--- | :--- |
+| **Source Table** | `01 Churn-Dataset` |
+| **Total Records** | 7,043 customers |
+| **Target Variable** | Customer status (Churned / Retained) |
+| **Key Features** | gender, CitizenShip seq, Partner, Dependents, tenure, Contract, PaymentMethod, MonthlyCharges, TotalCharges, numAdminTickets, numTechTickets |
+
+It covers:
 
 - 👤 Customer Demographics (gender, senior citizen, partner, dependents)
 - 📅 Customer Tenure
@@ -59,6 +72,12 @@ The dataset used is the well-known **IBM Telco Customer Churn** sample dataset �
 
 The overview page: total customers, churn rate, monthly revenue loss, and a breakdown of the customer base by gender, citizenship (senior/young), partner, and dependents.
 
+**Key Findings:**
+- **7,043 total customers**, **27% churn rate**, **1,869 churned (26.54%)** vs. **5,174 retained (73.46%)**.
+- Customer base is close to gender-balanced: 3,555 male / 3,488 female.
+- Young citizens dominate the base (5,901 customers) but churn less (**23.61%**) than senior citizens (1,142 customers, **41.68%**).
+- Partner status is nearly split (48.3% Yes / 51.7% No); most customers have no dependents (70.04%).
+
 ---
 
 ## 📅 Account Details — Tenure
@@ -66,6 +85,11 @@ The overview page: total customers, churn rate, monthly revenue loss, and a brea
 ![Account Details Tenure](Images/account-details-tenure.png)
 
 Average tenure for retained vs. churned customers, and churn rate broken down by contract type (month-to-month, one year, two year).
+
+**Key Findings:**
+- Retained customers average **37.57 months** of tenure vs. just **17.98 months** for churned customers.
+- **Month-to-month** contracts churn at **42.71%** — by far the highest of any contract type.
+- **One-year** contracts drop to **11.27%** churn, and **two-year** contracts are the most stable at just **2.83%**.
 
 ---
 
@@ -75,6 +99,12 @@ Average tenure for retained vs. churned customers, and churn rate broken down by
 
 Administrative and technical support ticket volume, split by customer status and by citizenship segment.
 
+**Key Findings:**
+- Churned customers logged **885 admin tickets** but a disproportionate **2,173 tech tickets**.
+- Retained customers logged more admin tickets (**2,747**) but far fewer tech tickets (**782**).
+- **Tech tickets are the stronger churn signal** — churned customers open ~3x more tech tickets than retained customers.
+- Young citizens generate the bulk of ticket volume (3,046 admin / 2,173 tech) vs. senior citizens (586 admin / 782 tech).
+
 ---
 
 ## 💰 Account Details — Charge
@@ -83,6 +113,12 @@ Administrative and technical support ticket volume, split by customer status and
 
 Total and average charges for retained vs. churned customers, plus monthly charge and admin-ticket revenue split by citizenship segment.
 
+**Key Findings:**
+- Retained customers account for **$13.2M** in total charges vs. only **$2.9M** for churned customers.
+- Average total charge is higher for senior citizens (**$2,810**) than young citizens (**$2,181**).
+- Monthly charge splits **$317K (retained)** vs. **$139K (churned)**.
+- Admin-ticket-related revenue skews heavily toward young citizens (**$364,962**) over seniors (**$91,155**).
+
 ---
 
 ## 💳 Account Details — Payment
@@ -90,6 +126,11 @@ Total and average charges for retained vs. churned customers, plus monthly charg
 ![Account Details Payment](Images/account-details-payment.png)
 
 Customer count, churn rate, and average charges broken down by payment method.
+
+**Key Findings:**
+- **Electronic check** has both the largest customer base (2,365) and the highest churn rate (**45.29%**).
+- Mailed check churns at **19.11%**, bank transfer at **16.71%**, credit card at **15.24%** — automatic payment methods retain best.
+- Average total charges are highest for bank transfer (**$3,079**) and credit card (**$3,071**) customers, lowest for mailed check (**$1,054**).
 
 ---
 
