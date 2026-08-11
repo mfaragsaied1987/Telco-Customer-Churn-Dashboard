@@ -40,8 +40,20 @@ A separate `KPIS Measures` table holds the calculated DAX measures (Churn Rate, 
 
 The report has 5 pages: **Demographic Analysis** (overview), and **Account Details** broken down by Tenure, Tickets, Charge, and Payment.
 
-> _Add the exported PNGs to `Images/` and reference them here, e.g.:_
-> `![Demographic Analysis](Images/demographic-analysis.png)`
+### Demographic Analysis
+![Demographic Analysis](Images/demographic-analysis.png)
+
+### Account Details — Tenure
+![Account Details Tenure](Images/account-details-tenure.png)
+
+### Account Details — Payment
+![Account Details Payment](Images/account-details-payment.png)
+
+### Account Details — Charge
+![Account Details Charge](Images/account-details-charge.png)
+
+### Account Details — Tickets
+![Account Details Tickets](Images/account-details-tickets.png)
 
 ## Key KPIs
 
@@ -78,7 +90,11 @@ Telco-Customer-Churn-Dashboard/
 ├── Power BI/
 │   └── Customers.pbix
 ├── Images/
-│   └── (dashboard screenshots)
+│   ├── demographic-analysis.png
+│   ├── account-details-tenure.png
+│   ├── account-details-payment.png
+│   ├── account-details-charge.png
+│   └── account-details-tickets.png
 └── README.md
 ```
 
