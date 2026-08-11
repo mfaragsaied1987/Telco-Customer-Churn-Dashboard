@@ -38,27 +38,38 @@ A separate `KPIS Measures` table holds the calculated DAX measures (Churn Rate, 
 
 ## Dashboard Preview
 
-> _Screenshots pending — export pages from Power BI Desktop (File → Export → PDF or a screen capture of each page) and drop them in the `Images/` folder, then reference them here, e.g.:_
-> `![Overview page](Images/overview.png)`
+The report has 5 pages: **Demographic Analysis** (overview), and **Account Details** broken down by Tenure, Tickets, Charge, and Payment.
+
+> _Add the exported PNGs to `Images/` and reference them here, e.g.:_
+> `![Demographic Analysis](Images/demographic-analysis.png)`
 
 ## Key KPIs
 
 | Metric | Value |
 |---|---|
-| Total Customers | _fill in from dashboard_ |
-| Churn Rate | _fill in from dashboard_ |
-| Churned Customers | _fill in from dashboard_ |
-| Retained Customers | _fill in from dashboard_ |
-| Monthly Revenue Loss | _fill in from dashboard_ |
-| % of Revenue (lost) | _fill in from dashboard_ |
+| Total Customers | 7,043 |
+| Churn Rate | 27% |
+| Churned Customers | 1,869 |
+| Retained Customers | 5,174 (73.46%) |
+| Total Monthly Charge | $456.12K |
+| Monthly Revenue Loss (churned) | $139.13K |
+| % of Revenue Lost | 31% |
 
 ## Key Insights
 
-_Add 3–4 findings once you review the dashboard, e.g. which contract type churns most, whether support tickets correlate with churn, which payment method has the highest churn rate._
+- **Payment method is the strongest churn signal.** Customers paying by **Electronic check** churn at **45.29%** — roughly 2.4–3x the rate of mailed check (19.11%), bank transfer (16.71%), or credit card (15.24%), despite Electronic check also being the largest segment (2,365 customers).
+- **Contract length strongly predicts retention.** Month-to-month customers churn at **42.71%**, versus **11.27%** for one-year and just **2.83%** for two-year contracts.
+- **Tenure gap between churned and retained customers is large.** Retained customers average **37.6 months** of tenure vs. **18 months** for churned customers — churn is heavily front-loaded in the customer lifecycle.
+- **Senior citizens churn disproportionately more.** Senior citizens churn at **41.68%** vs. **23.61%** for younger customers, even though they're a much smaller segment (1,142 vs 5,901 customers).
+- **Support ticket load correlates with churn.** Churned customers raised proportionally more technical tickets (2,173 tech tickets among churned vs. 782 among retained), suggesting unresolved support issues are a churn driver.
 
 ## Business Recommendations
 
-_Add actionable recommendations based on the insights above (e.g. incentivize longer contracts, follow up with customers who raise multiple support tickets, etc.)._
+- Target retention offers/incentives at **electronic check** users specifically — the highest-churn, highest-volume payment segment.
+- Push month-to-month customers toward **one- or two-year contracts** (e.g. discounts for longer commitments) given the sharp drop in churn rate with contract length.
+- Build a proactive outreach flow for customers in their **first ~18 months**, since that's when most churn happens.
+- Prioritize faster resolution for **technical support tickets** — ticket volume tracks closely with churn.
+- Review the **senior citizen** experience specifically, since this segment churns at nearly double the rate of younger customers.
 
 ## Repository Structure
 
